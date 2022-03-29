@@ -22,6 +22,7 @@ function compararNum (){
     const numUsuaria = valorUsuaria ();
     if(numAleat === numUsuaria) {
         title.innerHTML = 'Has ganado el doble de lo apostado :)';
+        console.log('holis');
     }
     else {
         title.innerHTML = 'Has perdido lo apostado :(';
