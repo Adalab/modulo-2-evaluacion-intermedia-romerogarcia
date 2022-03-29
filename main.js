@@ -3,11 +3,11 @@
 const select = document.querySelector('.js-select');
 const btn = document.querySelector('.js-btn');
 const input = document.querySelector('.js-input');
-const title = document.querySelector('js-title');
+const title = document.querySelector('.js-title');
 
 //numero usuaria
 function valorUsuaria (){
-    const numUsuaria = select.value;
+    const numUsuaria = parseInt(select.value);
     return numUsuaria;
 }
 
@@ -22,7 +22,6 @@ function compararNum (){
     const numUsuaria = valorUsuaria ();
     if(numAleat === numUsuaria) {
         title.innerHTML = 'Has ganado el doble de lo apostado :)';
-        console.log('holis');
     }
     else {
         title.innerHTML = 'Has perdido lo apostado :(';
@@ -32,7 +31,7 @@ function compararNum (){
 
 //funcion jefa
 function handlerclickBtn (event) {
-    event.preventDeafult();
+    event.preventDefault();
     compararNum();  
 }
 
