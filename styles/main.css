@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  background-color: rgb(240, 239, 239);
 }
 
 .main {
@@ -22,17 +23,31 @@
   padding-bottom: 25px;
 }
 
-.js-btn {
-  background-color: rgb(188, 145, 228);
+.js_btn {
+  background-color: rgb(156, 215, 243);
   border: none;
-  color: blueviolet;
+  color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.js-title {
+.js_reload {
+  border: none;
+  width: 120px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: rgb(177, 90, 90);
+  color: white;
+  cursor: pointer;
+}
+
+.js_result {
   padding-top: 25px;
   color: rgb(151, 151, 151);
 }
 
-.js-select {
+.js_select {
   color: rgb(117, 117, 117);
 }

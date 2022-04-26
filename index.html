@@ -11,11 +11,11 @@
 </head>
 <body>
     <main class="main">
-<h2 class="h2">Datos y Apuestas</h2>
+<h1 class="h2">Datos y Apuestas</h1>
 <p class="p">Introduce aquí tu jugada:</p>
 <div>
     <form class="form">
-        <select class="select js-select" name="select"> <!--ELEMENTO JS-->
+        <select class="select js_select" name="select">
             <option value="selected">Qué número apuestas del 1 al 6</option>
             <option value="value">1</option>
             <option value="value">2</option>
@@ -24,15 +24,25 @@
             <option value="value">5</option>
             <option value="value">6</option>
         </select>
-        <input type="text" name="apuesta" title="¿Cuánto apuestas?" placeholder="¿Cuanto apuestas?" class="js-input"/>
         
-        <button class="button js-btn">Jugar</button> <!--ELEMENTO JS-->
+        <input type="text" name="apuesta" title="¿Cuánto apuestas?" placeholder="¿Cuanto apuestas?" class="js_input"/>
+
+        <!--comenzar el juego-->
+        <button class="button js_btn">Jugar</button> <!--reiniciar el juego-->
+        <button class="badge js_reload hidden">Reiniciar Juego</button>
     </form>
 </div>
+<div>
+    <h3 class="js_result">Vamos a Jugar!</h3>
+</div>
 
-<h3 class="js-title">Vamos a Jugar!</h3>
-<p class="p">Saldo: 50</p>
+    <div>
+        <p class="p js_saldo input">Saldo: 50</p>
+    </div>
 
+    <div class="">
+    <p class="js_winner input"></p>
+  </div>
 
     </main>
     <script src="./javascript/main.js"></script>
